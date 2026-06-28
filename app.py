@@ -94,9 +94,7 @@ Rules:
             session.pop("selected", None)
             session.pop("explanation", None)
 
-        # ==========================================
         # Submit Answer
-        # ==========================================
         elif action == "submit":
 
             questions = session["questions"]
@@ -115,9 +113,7 @@ Rules:
             session["selected"] = selected
             session["explanation"] = questions[current]["explanation"]
 
-        # ==========================================
         # Next Question
-        # ==========================================
         elif action == "next":
 
             if session["current"] < len(session["questions"]) - 1:
@@ -129,16 +125,12 @@ Rules:
             session.pop("selected", None)
             session.pop("explanation", None)
 
-    # -------------------------
     # Load current question
-    # -------------------------
     questions = session.get("questions", [])
 
     current = session.get("current", 0)
 
-    # -------------------------
     # Quiz Finished
-    # -------------------------
     if questions and current >= len(questions):
         session.clear()
         return render_template("index.html")
