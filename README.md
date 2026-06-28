@@ -102,7 +102,7 @@ http://127.0.0.1:5000
 
 ## How to Use
 
-1. Enter any topic (Example: Python, Machine Learning, Java, SQL).
+1. Enter any topic (Example: Python, Photosynthesis, Neural NetworksL).
 2. Click **Generate Quiz**.
 3. Read the question and select an answer.
 4. View instant feedback and explanation.
